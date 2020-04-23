@@ -1,0 +1,397 @@
+---
+name: Application
+sourceless: true
+order: 2
+---
+
+<!-- ========== HEADER ========== -->
+<header id="header" class="header left-aligned-navbar">
+  <div class="header-section">
+    <div id="logoAndNav" class="container">
+      <!-- Nav -->
+      <nav class="js-mega-menu navbar navbar-expand-lg">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#" aria-label="Front">
+          <img src="/images/logo.svg" alt="Logo">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Responsive Toggle Button -->
+        <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation"
+          aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+          <span class="navbar-toggler-default">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor"
+                d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z" />
+            </svg>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor"
+                d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z" />
+            </svg>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Navigation -->
+        <div id="navBar" class="collapse navbar-collapse">
+          <div class="navbar-body header-abs-top-inner">
+            <ul class="navbar-nav">
+
+              <!-- Nav item -->
+              <li class="hs-has-sub-menu navbar-nav-item">
+                <a id="navItemMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;"
+                  aria-haspopup="true" aria-expanded="false" aria-labelledby="navItemSubMenu">Nav item</a>
+
+                <!-- Nav item - Submenu -->
+                <div id="navItemSubMenu" class="hs-sub-menu dropdown-menu" aria-labelledby="navItemMegaMenu"
+                  style="min-width: 230px;">
+                  <a class="dropdown-item" href="#">Feature 1</a>
+                  <a class="dropdown-item" href="#">Feature 2</a>
+                  <a class="dropdown-item" href="#">Feature 3</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Feature 4</a>
+                  <a class="dropdown-item" href="#">Feature 5</a>
+                </div>
+                <!-- End Submenu -->
+              </li>
+              <!-- End Nav item -->
+
+              <!-- Large item -->
+              <li class="hs-has-mega-menu navbar-nav-item" data-hs-mega-menu-item-options='{
+                    "desktop": {
+                      "position": "right",
+                      "maxWidth": "900px"
+                    }
+                  }'>
+                <a id="largeItemMegaMenu" class="hs-mega-menu-invoker nav-link nav-link-toggle" href="javascript:;"
+                  aria-haspopup="true" aria-expanded="false">Large item</a>
+
+                <!-- Large item - Mega Menu -->
+                <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="largeItemMegaMenu">
+                  <div class="row no-gutters">
+                    <div class="col-lg-8">
+                      <div class="navbar-promo-card-deck">
+                        <!-- Promo Item -->
+                        <div class="navbar-promo-card navbar-promo-item">
+                          <a class="navbar-promo-link" href="#">
+                            <div class="media align-items-center">
+                              <img class="navbar-promo-icon" src="https://htmlstream.com/front/assets/svg/icons/icon-67.svg" alt="SVG">
+                              <div class="media-body">
+                                <span class="navbar-promo-title">Course <span
+                                    class="badge badge-success badge-pill ml-1">New</span></span>
+                                <span class="navbar-promo-text">Learn On-demand demo</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- End Promo Item -->
+
+                        <!-- Promo Item -->
+                        <div class="navbar-promo-card navbar-promo-item">
+                          <a class="navbar-promo-link" href="#">
+                            <div class="media align-items-center">
+                              <img class="navbar-promo-icon" src="https://htmlstream.com/front/assets/svg/icons/icon-45.svg" alt="SVG">
+                              <div class="media-body">
+                                <span class="navbar-promo-title">App Marketplace</span>
+                                <span class="navbar-promo-text">Marketplace app demo</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- End Promo Item -->
+                      </div>
+
+                      <div class="navbar-promo-card-deck">
+                        <!-- Promo Item -->
+                        <div class="navbar-promo-card navbar-promo-item">
+                          <a class="navbar-promo-link" href="#">
+                            <div class="media align-items-center">
+                              <img class="navbar-promo-icon" src="https://htmlstream.com/front/assets/svg/icons/icon-4.svg" alt="SVG">
+                              <div class="media-body">
+                                <span class="navbar-promo-title">Help Desk</span>
+                                <span class="navbar-promo-text">Help desk demo</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- End Promo Item -->
+
+                        <!-- Promo Item -->
+                        <div class="navbar-promo-card navbar-promo-item">
+                          <a class="navbar-promo-link disabled" href="#">
+                            <div class="media align-items-center">
+                              <img class="navbar-promo-icon" src="https://htmlstream.com/front/assets/svg/icons/icon-5.svg" alt="SVG">
+                              <div class="media-body">
+                                <span class="navbar-promo-title">Account</span>
+                                <span class="navbar-promo-text">Coming soon...</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- End Promo Item -->
+                      </div>
+
+                      <div class="navbar-promo-card-deck">
+                        <!-- Promo Item -->
+                        <div class="navbar-promo-card navbar-promo-item">
+                          <a class="navbar-promo-link disabled" href="#">
+                            <div class="media align-items-center">
+                              <img class="navbar-promo-icon" src="https://htmlstream.com/front/assets/svg/icons/icon-19.svg" alt="SVG">
+                              <div class="media-body">
+                                <span class="navbar-promo-title">Job</span>
+                                <span class="navbar-promo-text">Coming soon...</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- End Promo Item -->
+
+                        <!-- Promo Item -->
+                        <div class="navbar-promo-card navbar-promo-item">
+                          <a class="navbar-promo-link disabled" href="#">
+                            <div class="media align-items-center">
+                              <img class="navbar-promo-icon" src="https://htmlstream.com/front/assets/svg/icons/icon-13.svg" alt="SVG">
+                              <div class="media-body">
+                                <span class="navbar-promo-title">House</span>
+                                <span class="navbar-promo-text">Coming soon...</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <!-- End Promo Item -->
+                      </div>
+                    </div>
+
+                    <!-- Promo -->
+                    <div class="col-lg-4 navbar-promo d-none d-lg-block">
+                      <a class="d-block navbar-promo-inner" href="#">
+                        <div class="position-relative">
+                          <img class="img-fluid rounded mb-3" src="https://htmlstream.com/front/assets/img/380x227/img1.jpg"
+                            alt="Image Description">
+                        </div>
+                        <span class="navbar-promo-text font-size-1">Front makes you look at things from a different
+                          perspectives.</span>
+                      </a>
+                    </div>
+                    <!-- End Promo -->
+                  </div>
+                </div>
+                <!-- End Large item - Mega Menu -->
+              </li>
+              <!-- End Large item -->
+
+              <!-- Language -->
+              <div class="hs-unfold ml-lg-auto">
+                <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center nav-link nav-link-toggle"
+                  href="javascript:;" data-hs-unfold-options='{
+              "target": "#languageDropdown",
+              "type": "css-animation",
+              "event": "hover",
+              "hideOnScroll": "true"
+             }'>
+                  <span class="d-sm-inline-block"><i class="fas fa-language"></i> English</span>
+                </a>
+
+                <div id="languageDropdown" class="hs-unfold-content dropdown-menu">
+                  <a class="dropdown-item active" href="#">English</a>
+                  <a class="dropdown-item" href="#">Deutsch</a>
+                  <a class="dropdown-item" href="#">Español‎</a>
+                </div>
+              </div>
+              <!-- End Language -->
+
+              <!-- Suggest/Error -->
+              <li class="list-inline-item d-none d-md-inline-block">
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-ghost-secondary mx-4" href="javascript:;"
+                    data-hs-unfold-options='{
+                  "target": "#sidebarContentSignal",
+                  "type": "css-animation",
+                  "animationIn": "fadeInRight",
+                  "animationOut": "fadeOutRight",
+                  "hasOverlay": "rgba(55, 125, 255, 0.1)",
+                  "smartPositionOff": true
+                 }'>
+                    <span class="d-inline-block d-sm-none">Suggest / Signal</span>
+                    <span class="d-none d-sm-inline-block"><i class="fas fa-exclamation"></i></span>
+                  </a>
+                </div>
+              </li>
+              <!-- End Suggest/Error -->
+
+            </ul>
+          </div>
+        </div>
+        <!-- End Navigation -->
+      </nav>
+      <!-- End Nav -->
+    </div>
+  </div>
+</header>
+<!-- ========== END HEADER ========== -->
+
+<!-- ========== SECONDARY CONTENTS ========== -->
+<!-- Account Sidebar Navigation -->
+<aside id="sidebarContentSignal" class="hs-unfold-content sidebar">
+  <div class="sidebar-scroller">
+    <div class="sidebar-container">
+      <div class="sidebar-footer-offset" style="padding-bottom: 7rem;">
+        <!-- Toggle Button -->
+        <div class="d-flex justify-content-end align-items-center pt-4 px-4">
+          <div class="hs-unfold">
+            <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-soft-secondary" href="javascript:;"
+              data-hs-unfold-options='{
+                "target": "#sidebarContentSignal",
+                "type": "css-animation",
+                "animationIn": "fadeInRight",
+                "animationOut": "fadeOutRight",
+                "hasOverlay": "rgba(55, 125, 255, 0.1)",
+                "smartPositionOff": true
+               }'>
+              <svg width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor"
+                  d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- End Toggle Button -->
+
+        <!-- Content -->
+        <div class="scrollbar sidebar-body">
+          <div class="sidebar-content py-4 px-7">
+            <form class="js-validate">
+              <!-- Login -->
+              <div id="suggest">
+                <!-- Title -->
+                <div class="text-center mb-7">
+                  <h3 class="mb-0">Suggest</h3>
+                  <p>an improvment or a feature</p>
+                </div>
+                <!-- End Title -->
+
+                <!-- Input Group -->
+                <div class="js-form-message mb-4">
+                  <label class="input-label">Email</label>
+                  <div class="input-group input-group-sm mb-2">
+                    <input type="email" class="form-control" name="email" id="signinEmail" placeholder="Email"
+                      aria-label="Email" required data-msg="Please enter a valid email address.">
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <!-- Input Group -->
+                <div class="js-form-message mb-3">
+                  <label class="input-label">Message</label>
+                  <div class="input-group input-group-sm mb-2">
+                    <textarea class="form-control" name="message" id="suggestMessage"
+                      placeholder="Your message" aria-label="Message" required
+                      data-msg="Please enter a message."></textarea>
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-sm btn-primary btn-block">Submit</button>
+                </div>
+
+                <div class="text-center mb-3">
+                  <span class="divider divider-xs divider-text">OR</span>
+                </div>
+
+                <div class="text-center">
+                  <a class="js-animation-link small font-weight-bold" href="javascript:;"
+                    data-hs-show-animation-options='{
+                       "targetSelector": "#signalError",
+                       "groupName": "idForm",
+                       "animationType": "css-animation",
+                       "animationIn": "slideInUp",
+                       "duration": 400
+                     }'><button class="btn btn-sm btn-outline-danger btn-block">Signal an error</button>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Forgot Password -->
+              <div id="signalError" style="display: none; opacity: 0;">
+                <!-- Title -->
+                <div class="text-center mb-7">
+                  <h3 class="mb-0">Signal an error</h3>
+                  <p>Your error will be sent to us.</p>
+                </div>
+                <!-- End Title -->
+
+                <!-- Input Group -->
+                <div class="js-form-message">
+                  <label class="input-label" for="email">Email</label>
+                  <div class="input-group input-group-sm mb-2">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your email"
+                      aria-label="Your email" required data-msg="Please enter a valid email address.">
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <!-- Input Group -->
+                <div class="js-form-message mb-3">
+                  <label class="input-label">Message</label>
+                  <div class="input-group input-group-sm mb-2">
+                    <textarea class="form-control" name="message" id="suggestMessage"
+                      placeholder="Your message" aria-label="Message" required
+                      data-msg="Please enter a message."></textarea>
+                  </div>
+                </div>
+                <!-- End Input Group -->
+
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-sm btn-primary btn-block">Submit</button>
+                </div>
+
+                <div class="text-center mb-3">
+                  <span class="divider divider-xs divider-text">OR</span>
+                </div>
+
+                <div class="text-center mb-4">
+                  <span class="small text-muted">You have an idea?</span>
+                  <a class="js-animation-link small font-weight-bold" href="javascript:;"
+                    data-hs-show-animation-options='{
+                       "targetSelector": "#suggest",
+                       "groupName": "idForm",
+                       "animationType": "css-animation",
+                       "animationIn": "slideInUp",
+                       "duration": 400
+                     }'><button class="btn btn-sm btn-outline-success btn-block">Suggest an improvment</button>
+                  </a>
+                </div>
+              </div>
+              <!-- End Forgot Password -->
+            </form>
+          </div>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="sidebar-footer border-top py-2 px-7">
+        <ul class="nav nav-sm">
+          <li class="nav-item">
+            <a class="nav-link pl-0" href="#">
+              <i class="fas fa-user-tie la-lg"></i>
+              Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-info-circle la-lg"></i>
+              Help
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <!-- End Footer -->
+    </div>
+  </div>
+</aside>
+<!-- End Account Sidebar Navigation -->
+<!-- ========== END SECONDARY CONTENTS ========== -->

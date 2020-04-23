@@ -1,0 +1,26 @@
+{{#extend "blank" htmlclass="drizzle-Layout" bodyclass="drizzle-Layout-body"}}
+  {{#content "head" mode="append"}}
+    <link rel="stylesheet" href="{{@root.baseurl}}/assets/drizzle/styles/drizzle.css">
+    <link rel="stylesheet" href="{{@root.baseurl}}/assets/toolkit/styles/toolkit.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="{{@root.baseurl}}/css/theme.min.css">
+
+    <script src="{{@root.baseurl}}/js/theme.min.js"></script>
+  {{/content}}
+  {{#content "body"}}
+    {{> drizzle.nav}}
+    <div class="drizzle-Layout-main drizzle-u-cf">
+      <div class="drizzle-u-pad drizzle-u-rhythm">
+        {{#block "main"}}
+
+        {{/block}}
+      </div>
+    </div>
+  {{/content}}
+  {{#content "foot"}}
+    <script src="{{@root.baseurl}}/assets/drizzle/scripts/drizzle.js"></script>
+    <script src="{{@root.baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
+  {{/content}}
+{{/extend}}

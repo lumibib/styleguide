@@ -1,0 +1,141 @@
+---
+name: "Desk:Space"
+layout: blank
+---
+
+<div class="d-flex flex-column vh-100">
+
+  {{> patterns.organisms.header.app}}
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main" class="flex-shrink-0">
+    
+    <div class="container space-2">
+
+      <!-- Title -->
+      <div class="mb-3 space-bottom-md-1 text-center">
+        <h1 class="">Space name</h1>
+      <div class="h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+      </div>
+      <!-- End Title -->
+
+      <!-- Domains -->
+      <div class="row mx-n2 mx-lg-n3">
+        <!-- Article -->
+        <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3">
+          <a class="card bg-img-hero w-100 min-h-270rem transition-3d-hover" href="#"
+            style="background-image: url(https://htmlstream.com/front/assets/img/400x500/img13.jpg);">
+            <div class="card-body">
+              <small class="d-block small text-white-70 font-weight-bold text-cap mb-2">Phython</small>
+              <h3 class="text-white">What's new in Phython 3.7.2</h3>
+            </div>
+            <div class="card-footer border-0 bg-transparent pt-0">
+              <span class="text-white font-size-1 font-weight-bold">Read now</span>
+            </div>
+          </a>
+        </article>
+        <!-- End Article -->
+
+        <!-- Article -->
+        <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+          <a class="card bg-img-hero w-100 min-h-270rem transition-3d-hover" href="#"
+            style="background-image: url(https://htmlstream.com/front/assets/img/400x500/img13.jpg);">
+            <div class="card-body">
+              <small class="d-block small text-white-70 font-weight-bold text-cap mb-2">Phython</small>
+              <h3 class="text-white">What's new in Phython 3.7.2</h3>
+            </div>
+            <div class="card-footer border-0 bg-transparent pt-0">
+              <span class="text-white font-size-1 font-weight-bold">Read now</span>
+            </div>
+          </a>
+        </article>
+        <!-- End Article -->
+
+        <!-- Article -->
+        <article class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0">
+          <a class="card bg-img-hero w-100 min-h-270rem transition-3d-hover" href="#"
+            style="background-image: url(https://htmlstream.com/front/assets/img/400x500/img15.jpg);">
+            <div class="card-body">
+              <small class="d-block small text-white-70 font-weight-bold text-cap mb-2">Tooling</small>
+              <h3 class="text-white">Build a staging server</h3>
+            </div>
+            <div class="card-footer border-0 bg-transparent pt-0">
+              <span class="text-white font-size-1 font-weight-bold">Read now</span>
+            </div>
+          </a>
+        </article>
+        <!-- End Article -->
+
+        <!-- Article -->
+        <article class="col-md-6 col-lg-4 px-2 px-lg-3">
+          <a class="card bg-img-hero w-100 min-h-270rem transition-3d-hover" href="#"
+            style="background-image: url(https://htmlstream.com/front/assets/img/400x500/img17.jpg);">
+            <div class="card-body">
+              <small class="d-block small text-white-70 font-weight-bold text-cap mb-2">Popular</small>
+              <h3 class="text-white">Artificial Intelligence</h3>
+            </div>
+            <div class="card-footer border-0 bg-transparent pt-0">
+              <span class="text-white font-size-1 font-weight-bold">Read now</span>
+            </div>
+          </a>
+        </article>
+        <!-- End Article -->
+      </div>
+    <!-- End Domains -->
+
+      <div class="row">
+        <div class="col-sm">
+          <!-- Title -->
+          <div class="mb-3 mb-sm-5 text-center">
+            <h2 class="text-lh-lg">Products</h2>
+          </div>
+          <!-- End Title -->
+          {{> patterns.molecules.list-group.base}}
+        </div>
+        <div class="col-sm">
+          <!-- Title -->
+          <div class="mb-3 mb-sm-5 text-center">
+            <h2 class="text-lh-lg">Services</h2>
+          </div>
+          <!-- End Title -->
+          {{> patterns.molecules.list-group.base}}
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  {{> patterns.organisms.footer.app}}
+
+</div>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of header
+    var header = new HSHeader($('#header')).init();
+
+    // initialization of HSMegaMenu component
+    var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+
+    // initialization of unfold
+    var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+    // initialization of form validation
+    $('.js-validate').each(function () {
+      $.HSCore.components.HSValidation.init($(this), {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+    });
+
+    // initialization of show animations
+    $('.js-animation-link').each(function () {
+      var showAnimation = new HSShowAnimation($(this)).init();
+    });
+  });
+</script>

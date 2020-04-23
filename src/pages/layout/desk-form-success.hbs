@@ -1,0 +1,75 @@
+---
+name: "Desk:Form:success"
+layout: blank
+---
+
+<div class="d-flex flex-column vh-100">
+
+  {{> patterns.organisms.header.app}}
+
+  <!-- ========== MAIN ========== -->
+  <main id="content" role="main" class="flex-shrink-0">
+
+    <!-- Success Section -->
+    <div class="position-relative text-center">
+      <div class="container space-1 space-bottom-lg-4">
+        <!-- Title -->
+        <div class="w-md-60 mx-md-auto mb-5 mb-md-7">
+          <div class="h2 mb-4">Get special offers on the latest developments from Front.</div>
+          <p><i class="far fa-check-circle fa-10x text-success"></i></p>
+        </div>
+        <!-- End Title -->
+
+        <!-- Action -->
+        <div class="w-md-75 w-lg-50 mx-md-auto">
+          <p>Go back to <a class="font-weight-bold" href="#">homepage <i
+                class="fas fa-angle-right ml-1"></i></a></p>
+        </div>
+        <!-- End Action -->
+
+        <!-- SVG Illustration -->
+        <div class="d-none d-lg-block position-absolute bottom-0 left-0 max-w-35rem w-100">
+          <img class="img-fluid" src="https://htmlstream.com/front/assets/svg/illustrations/mobile-article.svg"
+            alt="Image Description">
+        </div>
+        <!-- End SVG Illustration -->
+      </div>
+    </div>
+    <!-- End Success Section -->
+
+  </main>
+  <!-- ========== END MAIN ========== -->
+
+  {{> patterns.organisms.footer.app}}
+
+</div>
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of header
+    var header = new HSHeader($('#header')).init();
+
+    // initialization of HSMegaMenu component
+    var megaMenu = new HSMegaMenu($('.js-mega-menu')).init();
+
+    // initialization of unfold
+    var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+
+    // initialization of form validation
+    $('.js-validate').each(function () {
+      $.HSCore.components.HSValidation.init($(this), {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+    });
+
+    // initialization of show animations
+    $('.js-animation-link').each(function () {
+      var showAnimation = new HSShowAnimation($(this)).init();
+    });
+  });
+</script>

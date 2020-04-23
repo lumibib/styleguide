@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="{{htmlclass}}">
+  <head>
+    {{#block "head"}}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      {{#if title}}
+        <title>{{title}} - {{data "project.title"}}</title>
+      {{else if name}}
+        <title>{{name}} - {{data "project.title"}}</title>
+      {{else}}
+        <title>{{data "project.title"}}</title>
+      {{/if}}
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@500;700&display=swap">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <link rel="stylesheet" href="{{@root.baseurl}}/css/theme.min.css">
+
+      {{#each styles}}
+        <link rel="stylesheet" href="{{@root.baseurl}}/assets/toolkit/styles/{{this}}.css">
+      {{/each}}
+      <script src="{{@root.baseurl}}/js/theme.min.js"></script>
+    {{/block}}
+  </head>
+  <body class="{{bodyclass}}">
+    {{#block "body"}}
+      {{#block "main"}}
+
+      {{/block}}
+    {{/block}}
+    {{#block "foot"}}
+
+    {{/block}}
+  </body>
+</html>

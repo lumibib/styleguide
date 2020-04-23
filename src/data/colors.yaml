@@ -1,0 +1,30 @@
+brand:
+  - color: "#0050c8"
+    property: "--primary"
+  - color: "#21325b"
+    property: "--secondary"
+  - color: "#2d1582"
+    property: "--tertiary"
+  - color: "#21325b"
+    property: "--navy"
+  - color: "#b2a5e4"
+    property: "--lila"
+
+
+grays:
+  - color: "#1e2022"
+    property: "--dark"
+  - color: "#e6e6e6"
+    property: "--light"
+  - color: "#ffffff"
+    property: "--white"
+
+states:
+  - color: "#00a3bc"
+    property: "--info"
+  - color: "#00a888"
+    property: "--success"
+  - color: "#d47d53"
+    property: "--warning"
+  - color: "#d53c31"
+    property: "--danger"
