@@ -47,7 +47,7 @@
     "gulp-util": "^3.0.7",
     "postcss-cssnext": "^2.5.2",
     "prettier": "^1.13.7",
-    "prismjs": "^1.4.1",
+    "prismjs": "^1.21.0",
     "suitcss-base": "^2.0.0",
     "suitcss-components-arrange": "^1.1.1",
     "suitcss-components-button": "^5.0.0",
